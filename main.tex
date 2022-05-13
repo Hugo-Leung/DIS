@@ -1,0 +1,119 @@
+\documentclass[10pt, paper=a4,]{article}
+\usepackage{graphicx}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   document style macros
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\Title#1{\begin{center} {\Large #1 } \end{center}}
+\def\Author#1{\begin{center}{ \sc #1} \end{center}}
+\def\Address#1{\begin{center}{ \it #1} \end{center}}
+\def\andauth{\begin{center}{and} \end{center}}
+\def\submit#1{\begin{center}Submitted to {\sl #1} \end{center}}
+\newcommand\pubblock{\rightline{\begin{tabular}{l} Proceedings of DIS2022\\ 
+         \pubdate  \end{tabular}}}
+
+\newenvironment{Abstract}{\begin{quotation} \begin{center} 
+             \large ABSTRACT \end{center}\bigskip 
+      \begin{large}}{\end{large}\end{quotation}}
+
+\newenvironment{Presented}{\begin{quotation} \begin{center} 
+             PRESENTED AT\end{center}\bigskip 
+      \begin{center}\begin{large}}{\end{large}\end{center} \end{quotation}}
+
+\def\Acknowledgements{\bigskip  \bigskip \begin{center} \begin{large}
+      \bf ACKNOWLEDGEMENTS \end{large}\end{center}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%  personal abbreviations and macros
+%    the following package contains macros used in this document:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textwidth=6.5in
+\textheight=8.75in
+\hoffset=-0.85in
+\voffset=-0.6in
+
+
+% include packages you will need
+\usepackage{color}
+\usepackage{lineno}
+\usepackage{hyperref}
+\usepackage[style=phys,%
+	biblabel=brackets,%
+	chaptertitle=false,pageranges=false,%
+	maxnames=4,sorting=none]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{siunitx}
+\usepackage{url}
+
+\graphicspath{{images/}}
+\addbibresource{references.bib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% basic data for the eprint:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newcommand\pubdate{\today}
+
+%%  Affiliation
+\def\affiliation{
+On behalf of SeaQuest Collaboration, \\
+Department of Physics, University of Illinois at Urbana-Champaign, \\Urbana, Illinois 61801, USA}
+
+%% Acknowledge the support
+\def\support{\footnote{Work supported by NSF}}
+
+
+\newcommand{\conference}{DIS2022: XXIX International Workshop on Deep-Inelastic Scattering and Related Subjects\\
+Santiago de Compostela, Spain\\
+May 2-6 2022}
+
+\begin{document}
+\large
+\begin{titlepage}
+\pubblock
+
+
+\vfill
+\Title{Measurement of Charmonium Production in $p + p$ and $p + d$ Interaction in the Fermilab SeaQuest Experiment}
+\vfill
+
+\Author{Ching Him Leung \support}
+\Address{\affiliation}
+\vfill
+
+\begin{Abstract}
+SeaQuest has measured dimuon events from the interaction of \SI{120}{\GeV} proton beam on liquid hydrogen and deuterium targets with dimuon mass between \num{2} and \SI{8}{\GeV}. These dimuon events contain both the Drell-Yan process and the charmonium ($J/\psi$ and $\psi^\prime$) production. Unlike the Drell-Yan process which probes the antiquark distributions in the nucleons, the charmonium production is sensitive to both quark and gluon distributions. SeaQuest has extracted the $(p+d)/(p+p)$ cross section ratios as well as the differential cross sections for charmonium production in the kinematic region of $0.4 < x_F < 0.9$. The $(p+d)/(p+p)$ cross section ratios for charmonium production are found to be significantly different from that of the Drell-Yan process. The measured differential cross sections for charmonium production are compared with theoretical model calculations.
+\end{Abstract}
+
+\vfill
+
+\begin{Presented}
+\conference
+\end{Presented}
+\vfill
+\end{titlepage}
+
+\setcounter{footnote}{0}
+\normalsize 
+
+
+\section{Introduction}
+\label{intro}
+
+\section{E906/SeaQuest Experiment}
+
+\section{Extraction of $J/\psi$ cross section}
+
+
+\section{Conclusions}
+
+
+\printbibliography[heading=bibintoc,title={References}]
+\end{document}
+
