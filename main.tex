@@ -35,6 +35,7 @@
 
 
 % include packages you will need
+\usepackage[utf8]{inputenc}
 \usepackage{color}
 \usepackage{lineno}
 \usepackage{hyperref}
@@ -42,7 +43,6 @@
 	biblabel=brackets,%
 	chaptertitle=false,pageranges=false,%
 	maxnames=4,sorting=none]{biblatex}
-\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amsthm,amssymb}
 \usepackage{graphicx}
 \usepackage{physics}
@@ -50,6 +50,7 @@
 \usepackage{tikz}
 \usepackage{siunitx}
 \usepackage{url}
+\usepackage{todonotes}
 
 \graphicspath{{images/}}
 \addbibresource{references.bib}
@@ -66,7 +67,7 @@ On behalf of SeaQuest Collaboration, \\
 Department of Physics, University of Illinois at Urbana-Champaign, \\Urbana, Illinois 61801, USA}
 
 %% Acknowledge the support
-\def\support{\footnote{Work supported by NSF}}
+\def\support{\footnote{Work supported by NSF-2111046}}
 
 
 \newcommand{\conference}{DIS2022: XXIX International Workshop on Deep-Inelastic Scattering and Related Subjects\\
@@ -76,44 +77,94 @@ May 2-6 2022}
 \begin{document}
 \large
 \begin{titlepage}
-\pubblock
+	\pubblock
 
 
-\vfill
-\Title{Measurement of Charmonium Production in $p + p$ and $p + d$ Interaction in the Fermilab SeaQuest Experiment}
-\vfill
+	\vfill
+	\Title{Measurement of Charmonium Production in $p + p$ and $p + d$ Interaction in the Fermilab SeaQuest Experiment}
+	\vfill
 
-\Author{Ching Him Leung \support}
-\Address{\affiliation}
-\vfill
+	\Author{Ching Him Leung \support}
+	\Address{\affiliation}
+	\vfill
 
-\begin{Abstract}
-SeaQuest has measured dimuon events from the interaction of \SI{120}{\GeV} proton beam on liquid hydrogen and deuterium targets with dimuon mass between \num{2} and \SI{8}{\GeV}. These dimuon events contain both the Drell-Yan process and the charmonium ($J/\psi$ and $\psi^\prime$) production. Unlike the Drell-Yan process which probes the antiquark distributions in the nucleons, the charmonium production is sensitive to both quark and gluon distributions. SeaQuest has extracted the $(p+d)/(p+p)$ cross section ratios as well as the differential cross sections for charmonium production in the kinematic region of $0.4 < x_F < 0.9$. The $(p+d)/(p+p)$ cross section ratios for charmonium production are found to be significantly different from that of the Drell-Yan process. The measured differential cross sections for charmonium production are compared with theoretical model calculations.
-\end{Abstract}
+	\begin{Abstract}
+		SeaQuest has measured dimuon events from the interaction of \SI{120}{\GeV} proton
+		beam on liquid hydrogen and deuterium targets with dimuon mass between \num{2}
+		and \SI{8}{\GeV}. These dimuon events contain both the Drell-Yan process and the
+		charmonium ($J/\psi$ and $\psi^\prime$) production. Unlike the Drell-Yan process
+		which probes the antiquark distributions in the nucleons, the charmonium production
+		is sensitive to both quark and gluon distributions. SeaQuest has extracted the
+		$(p+d)/(p+p)$ cross section ratios as well as the differential cross sections for
+		charmonium production in the kinematic region of $0.4 < x_F < 0.9$. The $(p+d)/(p+p)$
+		cross section ratios for charmonium production are found to be significantly different
+		from that of the Drell-Yan process. The measured differential cross sections for
+		charmonium production are compared with theoretical model calculations.
+	\end{Abstract}
 
-\vfill
+	\vfill
 
-\begin{Presented}
-\conference
-\end{Presented}
-\vfill
+	\begin{Presented}
+		\conference
+	\end{Presented}
+	\vfill
 \end{titlepage}
 
 \setcounter{footnote}{0}
-\normalsize 
+\normalsize
 
 
 \section{Introduction}
-\label{intro}
+\label{sec:intro}
+The SeaQuest experiment at Fermilab was designed to measure high-mass dimuons
+produced in the interaction of \SI{120}{\GeV} proton beam with various targets.
+Dimuons originating from the Drell-Yan process \cite{drell1970} as well as the
+decay of quarkonium states were collected simultaneously. Results from SeaQuest
+on the $(p+d)/(p+p)$ Drell-Yan cross section ratios, which are sensitive to
+the flavor asymmtry of $\bar{d}/\bar{u}$ in the proton, were reported recently
+\cite{dove2021}.
+
+\todo[inline]{$J/\psi$ production}
+Unlike the Drell-Yan process which primarily involves the annihilation of quark
+and antiquark pair via electromagnetic interaction, charmonium production proceds
+via strong interaction.
 
 \section{E906/SeaQuest Experiment}
+\label{sec:e906}
+SeaQuest is a fixed-target experiment utilizing the \SI{120}{\GeV} proton beam
+from the Fermilab Main Injector. Details of the SeaQuest spectrometer can be
+found in Ref.~\cite{aidala2019}. The target system consists of seven
+interchangeable targets, including a flask with liquid hydrogen, a flask with
+liquid deuterium,an empty flask (vacuum), solid carbon, iron, and tungsten
+targets as well as a space with no target (air). The targets are interchanged
+periodically to reduce systematic uncertainties in the measured cross section
+ratios for different targets.
 
-\section{Extraction of $J/\psi$ cross section}
+The spectrometer consists of two magnets and four tracking stations. FMag,
+placed \SI{104}{\cm} downstream the target, is a \SI{5}{\m} solid iron magnet
+that acts as the beam dump as well as a focusing magnet. It is then followed by
+the first tracking stations. Stations 1, 2 and 3 each consists of plastic
+scintillator hodoscopes and drift chambers. An open air dipole magnet (KMag) is
+placed between station 1 and station 2. The vertical magnetic field from both
+magnets bends the muons horizontally, allowing the measurement of the momentum
+of the muons. Downstream of station 3, there is a 1 m iron wall acting as a
+hadron absorber. Station 4 is located behind the hadron absorber and acts as a
+muon identifier. Station 4 consists of a hodoscope array and 4 layers of
+proportional tube planes. Tracks that pass through the hadron absorber and
+produce hits on station 4 are assumed to be from muons.
 
+\section{Extraction of \texorpdfstring{$J/\psi$}{J/psi} cross section}
+\label{sec:result}
+\todo[inline]{mass distribution}
+
+\todo[inline]{absolute cross section}
+
+\todo[inline]{cross section ratios}
 
 \section{Conclusions}
 
 
 \printbibliography[heading=bibintoc,title={References}]
+\listoftodos 
 \end{document}
 
