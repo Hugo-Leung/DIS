@@ -50,7 +50,7 @@
 \usepackage{tikz}
 \usepackage{siunitx}
 \usepackage{url}
-\usepackage{todonotes}
+\usepackage[obeyFinal]{todonotes}
 
 \graphicspath{{images/}}
 \addbibresource{references.bib}
@@ -64,7 +64,7 @@
 %%  Affiliation
 \def\affiliation{
 On behalf of SeaQuest Collaboration, \\
-Department of Physics, University of Illinois at Urbana-Champaign, \\Urbana, Illinois 61801, USA}
+Department of Physics, University of Illinois Urbana-Champaign, \\Urbana, Illinois 61801, USA}
 
 %% Acknowledge the support
 \def\support{\footnote{Work supported by NSF-2111046}}
@@ -128,13 +128,33 @@ the flavor asymmetry of $\bar{d}/\bar{u}$ in the proton, were reported recently
 Unlike the Drell-Yan process which primarily involves the annihilation of quark
 and antiquark pair via electromagnetic interaction, charmonium production proceeds
 via strong interaction containing contributions from both quark-antiquark
-annihilation and gluon-gluon fusion processes. 
+annihilation and gluon-gluon fusion processes.
 
 While proton-induced charmonium production is expected to be dominated by gluon-gluon
 fusion process \cite{vogt1999}, some contributions form the quark-antiquark
 annihilation process is also expected. The relative importance of these two
 processes is expected to depends on the energy of the colliding hadron as well
-as the Feynman-$x$ ($x_F$) of the charmonium \cite{peng1995}.
+as the Feynman-$x$ ($x_F$) of the charmonium \cite{peng1995} as illustrated in
+Fig.~\ref{fig:cem_comp}.
+\begin{figure}[htbp!]
+	\centering
+	\begin{subfigure}{0.45\linewidth}
+		\includegraphics[width=0.9\linewidth]{E906_contribution_LO}
+		\caption{}
+		\label{subfig:cem_e906}
+	\end{subfigure}
+	\begin{subfigure}{0.45\linewidth}
+		\includegraphics[width=0.9\linewidth]{E866_contribution_LO}
+		\caption{}
+		\label{subfig:cem_e866}
+	\end{subfigure}
+	\caption{The relative importance of quark-antiquark annihilation
+		and gluon-gluon fusion processes calculated at E906 energy (\subref{subfig:cem_e906})
+		and E866 energy (\subref{subfig:cem_e866}) using CEM framework \cite{mangano1993}.}
+	\label{fig:cem_comp}
+\end{figure}
+
+
 
 \section{E906/SeaQuest Experiment}
 \label{sec:e906}
@@ -162,16 +182,68 @@ produce hits on station 4 are assumed to be from muons.
 
 \section{Extraction of \texorpdfstring{$J/\psi$}{J/psi} cross section}
 \label{sec:result}
-\todo[inline]{mass distribution}
 
-\todo[inline]{absolute cross section}
+The $J/\psi$ yield is obtained by studying the mass distribution as shown in
+Fig.~\ref{fig:mass}. The mass distribution is fitted by taking into account
+several contributions. First, the mass spectrum from the data collected 
+with the empty target flask, properly normalized by the integrated beam 
+intensity, is shown as the black dash-dot-doted curve. 
+\todo{describe the MC and the fitting procedure}
 
-\todo[inline]{cross section ratios}
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{extFig3}
+	\caption{The mass distribution of hydrogen target data (top panel) and
+		deuterium target data (bottom panel)\cite{dove2021}\todo[inline]{describe the different color}}
+	\label{fig:mass}
+\end{figure}
+
+After the number of $J/\psi$ events is extracted from the mass distributions,
+the $p+d$ and $p+p$ cross sections can be calculated. And the result is shown in
+Fig.\ref{fig:abs_cs_NRQCD}.
+\todo{describe the cross section calculation and systematic}
+\begin{figure}[htbp!]
+	\centering
+	\begin{subfigure}{0.45\linewidth}
+		\includegraphics[width=0.9\linewidth]{jpsi_xF_LH2}
+	\end{subfigure}
+	\begin{subfigure}{0.45\linewidth}
+		\includegraphics[width=0.9\linewidth]{jpsi_xF_LD2}
+	\end{subfigure}
+	\caption{The preliminary result on the extracted $J/\psi$ cross section for
+		proton on hydrogen (left) and proton on deuterium (right). The result is
+		also compared with NRQCD predictions.}
+		\label{fig:abs_cs_NRQCD}
+\end{figure}
+The preliminary is in good agreement with the NRQCD calculation.
+
+
+\begin{figure}[htbp!]
+	\centering
+	\begin{subfigure}{0.45\linewidth}
+		\includegraphics[width=0.9\linewidth]{jPsi_all_noTheory_v2}
+	\end{subfigure}
+	\begin{subfigure}{0.45\linewidth}
+		\includegraphics[width=0.9\linewidth]{jPsi_csr_x2_nature_NRQCD_CEM}
+	\end{subfigure}
+	\caption{The preliminary result on the extracted $J/\psi$ $(p+d)/2(p+p)$
+		cross section ratio as a function of $x_F$ (left) and $x_t$ (right).
+		The extracted ratio is also compared with previous measurements by NA51
+		\cite{abreu1998} and E866 \cite{peng2003} (left), as well as the Drell-Yan
+		cross section ration reported by SeaQuest\cite{dove2021} (right).}
+		\label{fig:csr}
+\end{figure}
+The preliminary $J/\psi$ $(p+d)/2(p+p)$ cross section ratio is shown in
+Fig.~\ref{fig:csr}. The preliminary result is consistent with unity within
+uncertainty. The difference between the $J/\psi$ and Drell-Yan ratios are
+reflecting the different mechanism in the different processes.
+\todo{cross section ratios}
+
 
 \section{Conclusions}
 
 
 \printbibliography[heading=bibintoc,title={References}]
-\listoftodos 
+\listoftodos
 \end{document}
 
