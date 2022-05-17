@@ -1,4 +1,4 @@
-\documentclass[10pt, a4paper]{article}
+\documentclass[10pt, a4paper,final]{article}
 \usepackage{graphicx}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -134,26 +134,7 @@ While proton-induced charmonium production is expected to be dominated by gluon-
 fusion process \cite{vogt1999}, some contributions form the quark-antiquark
 annihilation process is also expected. The relative importance of these two
 processes is expected to depends on the energy of the colliding hadron as well
-as the Feynman-$x$ ($x_F$) of the charmonium \cite{peng1995} as illustrated in
-Fig.~\ref{fig:cem_comp}.
-\begin{figure}[htbp!]
-	\centering
-	\begin{subfigure}{0.45\linewidth}
-		\includegraphics[width=0.9\linewidth]{E906_contribution_LO}
-		\caption{}
-		\label{subfig:cem_e906}
-	\end{subfigure}
-	\begin{subfigure}{0.45\linewidth}
-		\includegraphics[width=0.9\linewidth]{E866_contribution_LO}
-		\caption{}
-		\label{subfig:cem_e866}
-	\end{subfigure}
-	\caption{The relative importance of quark-antiquark annihilation
-		and gluon-gluon fusion processes calculated at E906 energy (\subref{subfig:cem_e906})
-		and E866 energy (\subref{subfig:cem_e866}) using CEM framework \cite{mangano1993}.}
-	\label{fig:cem_comp}
-\end{figure}
-
+as the Feynman-$x$ ($x_F$) of the charmonium \cite{peng1995}.
 
 
 \section{E906/SeaQuest Experiment}
@@ -182,25 +163,69 @@ produce hits on station 4 are assumed to be from muons.
 
 \section{Extraction of \texorpdfstring{$J/\psi$}{J/psi} cross section}
 \label{sec:result}
+Data collection for SeaQuest ran from April 2014 to July 2017. The analysis
+presented here is performed on data collected until August 2015, about half
+of the entire data set. After applying various analysis cuts to select
+candidate dimuon events form the target, the dimuon invariant mass distribution
+is shown in Fig.~\ref{fig:mass}.
 
-The $J/\psi$ yield is obtained by studying the mass distribution as shown in
-Fig.~\ref{fig:mass}. The mass distribution is fitted by taking into account
-several contributions. First, the mass spectrum from the data collected 
-with the empty target flask, properly normalized by the integrated beam 
-intensity, is shown as the black dash-dot-doted curve. 
+The mass distribution is fitted by taking into account
+several contributions. First, the mass spectrum from the data collected
+with the empty target flask, properly normalized by the integrated beam
+intensity, is shown as the black dash-dot-doted curve.
 \todo{describe the MC and the fitting procedure}
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{extFig3}
+	\includegraphics[width=0.65\linewidth]{extFig3}
 	\caption{The mass distribution of hydrogen target data (top panel) and
-		deuterium target data (bottom panel)\cite{dove2021}\todo[inline]{describe the different color}}
+		deuterium target data (bottom panel)\cite{dove2021}
+		\todo[inline]{describe the different color}}
 	\label{fig:mass}
 \end{figure}
 
 After the number of $J/\psi$ events is extracted from the mass distributions,
-the $p+d$ and $p+p$ cross sections can be calculated. And the result is shown in
-Fig.\ref{fig:abs_cs_NRQCD}.
+the quarkonium production cross section is obtained from the yeilds as follows
+\begin{equation}
+	B\dv{\sigma}{c_F} = \frac{N_{\textrm{events}}}{\Delta x_F \mathcal{L} \epsilon},
+\end{equation}
+where $B$ is the branching ratio for $J/\psi$ to decay into a muon pair,
+$epslon$ is the spectrometer acceptance and efficiency correction, and
+$\mathcal{L}$ is the effective luminosity. The spectrometer acceptance and
+efficiency correction are obtained by studying the Monte-Carlo simulation.
+
+To compare the measured $J/\psi$ production cross section with theoretical
+expectations, we have performed calculation using the Next-to-Leading
+order (NLO) Color Evaporation Model (CEM)\cite{mangano1993} and
+Non-Relativistic QCD (NRQCD) \cite{bodwin1997}. In both model, the heavy
+quark-antiquark ($\bar{Q}Q$) pair production is calculated using purturbative QCD.
+The main difference between the two models is in the hadronization into specific
+quarkonium bound state. In the CEM framework, it is characterized with a single
+parameter; whereas in NRQCD, it is discribed by a set of long-distance matrix
+elements which depend on the spin, color and angular momentum of the $\bar{Q}Q$
+pairs.
+
+The model predictions from both model for the $J/\psi$ production with a \SI{120}{\GeV}
+proton beam are shown in Fig.~\ref{fig:jpsi_theory}. At forward $x_F$, both models suggest
+that quark-antiquark annihilation being more important than gluon-gluon fusion, but NRQCD
+put greater importance on quark-antiquark annihilation.
+\begin{figure}[htbp!]
+	\centering
+	\begin{subfigure}{0.45\linewidth}
+		\includegraphics[width=0.9\linewidth]{pp_norm_cs_NLO_pp}
+	\end{subfigure}
+	\begin{subfigure}{0.45\linewidth}
+		\includegraphics[width=0.9\linewidth]{jpsi_cs_pp}
+	\end{subfigure}
+	\caption{The model prediction for $J/\psi$ production with a \SI{120}{\GeV}
+		proton beam using CEM (left) and NRQCD {right}. Contribution from the
+		quark-antiquark annihilation and gluon-gluon fusion are shown as blue dotted line
+		and red dashed line.}
+	\label{fig:jpsi_theory}
+\end{figure}
+
+The preliminary result from SeaQuest is shown in Fig.\ref{fig:abs_cs_NRQCD},
+which is in good agreement with both the CEM and NRQCD calculation.
 \todo{describe the cross section calculation and systematic}
 \begin{figure}[htbp!]
 	\centering
@@ -213,11 +238,13 @@ Fig.\ref{fig:abs_cs_NRQCD}.
 	\caption{The preliminary result on the extracted $J/\psi$ cross section for
 		proton on hydrogen (left) and proton on deuterium (right). The result is
 		also compared with NRQCD predictions.}
-		\label{fig:abs_cs_NRQCD}
+	\label{fig:abs_cs_NRQCD}
 \end{figure}
-The preliminary is in good agreement with the NRQCD calculation.
 
 
+The $(p+d)/2(p+p)$ cross section ratio can also be obtained. As the most of the
+systematic uncertainties are correlated between the hydrogen and deuterium targets,
+they would cancel out in the ratios.
 \begin{figure}[htbp!]
 	\centering
 	\begin{subfigure}{0.45\linewidth}
@@ -231,17 +258,40 @@ The preliminary is in good agreement with the NRQCD calculation.
 		The extracted ratio is also compared with previous measurements by NA51
 		\cite{abreu1998} and E866 \cite{peng2003} (left), as well as the Drell-Yan
 		cross section ration reported by SeaQuest\cite{dove2021} (right).}
-		\label{fig:csr}
+	\label{fig:csr}
 \end{figure}
 The preliminary $J/\psi$ $(p+d)/2(p+p)$ cross section ratio is shown in
-Fig.~\ref{fig:csr}. The preliminary result is consistent with unity within
-uncertainty. The difference between the $J/\psi$ and Drell-Yan ratios are
-reflecting the different mechanism in the different processes.
-\todo{cross section ratios}
+Fig.~\ref{fig:csr}. The SeaQuest measurement is at a lower energy and higher $x_F$
+compared to previous measurements. The preliminary result is consistent with unity
+within uncertainty, in qualitative agreement with earlier measurement at \SI{450}{\GeV}
+by the NA51 Collaboration and \SI{800}{\GeV} by the E866 Collboration.
 
+While the Drell-Yan process proceeds via electromagnetic interaction sensitive
+to the quarks and antiquarks distribution, the charmonium production is a strong
+interaction sensitive to the gluon contents of the colliding nucleons. These
+different characteristics between the two processes are reflected in the
+$(p+d)/2(p+p)$ ratios. While Drell-Yan ratios is significantly different from unity
+as a result of the flavor asymmetry of the light-quark sea, the $J/\psi$ production
+cross section ratio is consistent with unity.
+
+The CEM and NRQCD calculation are shown as green dotted line and orange solid line
+respectively. The difference between the two calculations are reflecting the higher
+importance of the quark-antiquark annihilation in the NRQCD calculation.
 
 \section{Conclusions}
+The simultaneous measurement of the charmonium production and the Drell-Yan dimuons
+in the SeaQuest experiment allows for a comparison of the two distict process. The
+extracted $J/\psi$ production cross section is in good agreement with both the CEM
+and NRQCD calculation. The $(p+d)/2(p+p)$ $J/\psi$ production cross section ratio
+is consistent with unity, and the difference between the $J/\psi$ and Drell-Yan
+ratio is reflecting the different mechanism between the two process.
 
+Predictions from the NRQCD calculation suggest the quark-antiquark annihilation would
+be more important in the $\psi^\prime$ production, and hence one would expect $\psi^\prime$
+to have a boarder $x_F$ distribution to $J/\psi$. The extraction of the $\psi^\prime$
+cross section is currently underway and would be able to provide input to charmonium
+production. Furthermore, the data from the remaining data sets would roughly double
+the statistics for both the charmonium production as well as the Drell-Yan.
 
 \printbibliography[heading=bibintoc,title={References}]
 \listoftodos
