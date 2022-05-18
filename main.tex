@@ -166,21 +166,30 @@ produce hits on station 4 are assumed to be from muons.
 Data collection for SeaQuest ran from April 2014 to July 2017. The analysis
 presented here is performed on data collected until August 2015, about half
 of the entire data set. After applying various analysis cuts to select
-candidate dimuon events form the target, the dimuon invariant mass distribution
-is shown in Fig.~\ref{fig:mass}.
-
-The mass distribution is fitted by taking into account
-several contributions. First, the mass spectrum from the data collected
-with the empty target flask, properly normalized by the integrated beam
-intensity, is shown as the black dash-dot-doted curve.
-\todo{describe the MC and the fitting procedure}
+candidate dimuon events form the liquid hydrogen target, the dimuon invariant
+mass distribution is shown in Fig.~\ref{fig:mass}. The mass distribution is
+fitted by taking into account several contributions. First, the mass spectrum
+from the data collected with the empty target flask, properly normalized by
+the integrated beam intensity. Second the expected mass distributions for
+$J/\psi$ and $\psi^\prime$ are  obtained by studying the GEANT4 based Monte-Carlo
+simulation, which takes into account the spectrometer acceptance. The Drell-Yan
+line shape is also generated using a similar procedure with the thrown distribution
+generated using a next-to-leading order calculation and CT14 parton distributions.
+The random background is then simulated by using the data collected with a
+``single-muon '' trigger. The two ``single-muon'' events are combined to
+create a simulated ``dimuon'' events, which is then sent through the same
+analysis chain. The data is then fitted to a sum of these different
+components to obtained the relative normalization for each components. The
+data are well described by this fitting procedure. And the mass distribution
+in each kinematic bin is also well described by this fitting procedure.
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.65\linewidth]{extFig3}
-	\caption{The mass distribution of hydrogen target data (top panel) and
-		deuterium target data (bottom panel)\cite{dove2021}
-		\todo[inline]{describe the different color}}
+	\includegraphics[width=0.65\linewidth]{extFig3_LH2}
+	\caption{The reconstructed invariant mass distribution for data collected on
+		liquid hydrogen target after all analysis cuts \cite{dove2021}.
+		In the lower mass region, the predominant signal is produced by the decay
+		of $J/\psi$ and $\psi^\prime$. }
 	\label{fig:mass}
 \end{figure}
 
@@ -198,12 +207,15 @@ To compare the measured $J/\psi$ production cross section with theoretical
 expectations, we have performed calculation using the Next-to-Leading
 order (NLO) Color Evaporation Model (CEM)\cite{mangano1993} and
 Non-Relativistic QCD (NRQCD) \cite{bodwin1997}. In both model, the heavy
-quark-antiquark ($\bar{Q}Q$) pair production is calculated using purturbative QCD.
-The main difference between the two models is in the hadronization into specific
-quarkonium bound state. In the CEM framework, it is characterized with a single
-parameter; whereas in NRQCD, it is discribed by a set of long-distance matrix
-elements which depend on the spin, color and angular momentum of the $\bar{Q}Q$
-pairs.
+quark-antiquark ($\bar{Q}Q$) pair production via various QCD hard process
+is calculated using purturbative QCD. The main difference between the two
+models is in the hadronization into specific quarkonium bound state.
+In the CEM framework, $\bar{c}c$ pair with an invariant mass $M_{\bar{c}c}$
+smaller than the $D\bar{D}$ open-charm threshold, a constant probability $F$,
+specific for each charmonium state, accounts for the hadronization into
+colorless charmonium state. In contrast, in NRQCD, the hadronization is
+described by a set of long-distance matrix elements which depend on the spin,
+color and angular momentum of the $\bar{Q}Q$ pairs.
 
 The model predictions from both model for the $J/\psi$ production with a \SI{120}{\GeV}
 proton beam are shown in Fig.~\ref{fig:jpsi_theory}. At forward $x_F$, both models suggest
@@ -225,7 +237,9 @@ put greater importance on quark-antiquark annihilation.
 \end{figure}
 
 The preliminary result from SeaQuest is shown in Fig.\ref{fig:abs_cs_NRQCD},
-which is in good agreement with both the CEM and NRQCD calculation.
+which is in good agreement with both the CEM and NRQCD calculation. The main
+sources of systematic uncertainties comes from the modeling of the random background
+and the beam luminosity normalization.
 \todo{describe the cross section calculation and systematic}
 \begin{figure}[htbp!]
 	\centering
