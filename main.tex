@@ -63,8 +63,8 @@
 
 %%  Affiliation
 \def\affiliation{
-On behalf of SeaQuest Collaboration, \\
-Department of Physics, University of Illinois Urbana-Champaign, \\Urbana, Illinois 61801, USA}
+Department of Physics, University of Illinois Urbana-Champaign, \\Urbana, Illinois 61801, USA\\
+Representing the SeaQuest Collaboration}
 
 %% Acknowledge the support
 \def\support{\footnote{Work supported by NSF-2111046}}
@@ -89,17 +89,17 @@ May 2-6 2022}
 	\vfill
 
 	\begin{Abstract}
-		SeaQuest has measured dimuon events from the interaction of \SI{120}{\GeV} proton
-		beam on liquid hydrogen and deuterium targets with dimuon mass between \num{2}
-		and \SI{8}{\GeV}. These dimuon events contain both the Drell-Yan process and the
-		charmonium ($J/\psi$ and $\psi^\prime$) production. Unlike the Drell-Yan process
+		The Fermilab SeaQuest experiment has measured dimuon events from the interaction
+		of \SI{120}{\GeV} proton beam on liquid hydrogen and deuterium targets with dimuon
+		mass between \num{2} and \SI{9}{\GeV}. These dimuon events contain both the Drell-Yan
+		process and the charmonium ($J/\psi$ and $\psi^\prime$) production. Unlike the Drell-Yan process
 		which probes the antiquark distributions in the nucleons, the charmonium production
 		is sensitive to both quark and gluon distributions. SeaQuest has extracted the
-		$(p+d)/(p+p)$ cross section ratios as well as the differential cross sections for
-		charmonium production in the kinematic region of $0.4 < x_F < 0.9$. The $(p+d)/(p+p)$
-		cross section ratios for charmonium production are found to be significantly different
+		$\sigma^{pd}/2\sigma^{pp}$ ratios as well as the differential cross sections for
+		charmonium production in the kinematic region of $0.4 < x_F < 0.9$. The $\sigma^{pd}/2\sigma^{pp}$
+		ratios for charmonium production are found to be significantly different
 		from that of the Drell-Yan process. The measured differential cross sections for
-		charmonium production are compared with theoretical model calculations.
+		charmonium production are compared with theoretical calculations.
 	\end{Abstract}
 
 	\vfill
@@ -120,15 +120,15 @@ The SeaQuest experiment at Fermilab was designed to measure high-mass dimuons
 produced in the interaction of \SI{120}{\GeV} proton beam with various targets.
 Dimuons originating from the Drell-Yan process \cite{drell1970} as well as the
 decay of quarkonium states were collected simultaneously. Results from SeaQuest
-on the $(p+d)/(p+p)$ Drell-Yan cross section ratios, which are sensitive to
+on the $\sigma^{pd}/2\sigma^{pp}$ Drell-Yan cross section ratios, which are sensitive to
 the flavor asymmetry of $\bar{d}/\bar{u}$ in the proton, were reported recently
 \cite{dove2021}.
 
 \todo[inline]{$J/\psi$ production}
 Unlike the Drell-Yan process which primarily involves the annihilation of quark
-and antiquark pair via electromagnetic interaction, charmonium production proceeds
-via strong interaction containing contributions from both quark-antiquark
-annihilation and gluon-gluon fusion processes.
+and antiquark via electromagnetic interaction, charmonium production proceeds
+via strong interaction containing contributions from both the quark-antiquark
+annihilation and the gluon-gluon fusion processes.
 
 While proton-induced charmonium production is expected to be dominated by gluon-gluon
 fusion process \cite{vogt1999}, some contributions form the quark-antiquark
@@ -143,22 +143,19 @@ SeaQuest is a fixed-target experiment utilizing the \SI{120}{\GeV} proton beam
 from the Fermilab Main Injector. Details of the SeaQuest spectrometer can be
 found in Ref.~\cite{aidala2019}. The target system consists of seven
 interchangeable targets, including a flask with liquid hydrogen, a flask with
-liquid deuterium,an empty flask (vacuum), solid carbon, iron, and tungsten
-targets as well as a space with no target (air). The targets are interchanged
+liquid deuterium, an empty flask (vacuum), solid carbon, iron, and tungsten
+targets as well as an empty space with no target (air). The targets are interchanged
 periodically to reduce systematic uncertainties in the measured cross section
-ratios for different targets.
+ratios for the different targets.
 
-The spectrometer consists of two magnets and four tracking stations. FMag,
-placed \SI{104}{\cm} downstream the target, is a \SI{5}{\m} solid iron magnet
-that acts as the beam dump as well as a focusing magnet. It is then followed by
-the first tracking stations. Stations 1, 2 and 3 each consists of plastic
-scintillator hodoscopes and drift chambers. An open air dipole magnet (KMag) is
+The spectrometer consists of two magnets and four tracking stations. FMag, is a
+solid iron magnet that acts as the beam dump as well as a focusing magnet. It is
+then followed by the first tracking stations. An open air dipole magnet (KMag) is
 placed between station 1 and station 2. The vertical magnetic field from both
 magnets bends the muons horizontally, allowing the measurement of the momentum
 of the muons. Downstream of station 3, there is a 1 m iron wall acting as a
 hadron absorber. Station 4 is located behind the hadron absorber and acts as a
-muon identifier. Station 4 consists of a hodoscope array and 4 layers of
-proportional tube planes. Tracks that pass through the hadron absorber and
+muon identifier. Tracks that pass through the hadron absorber and
 produce hits on station 4 are assumed to be from muons.
 
 \section{Extraction of \texorpdfstring{$J/\psi$}{J/psi} cross section}
@@ -166,29 +163,28 @@ produce hits on station 4 are assumed to be from muons.
 Data collection for SeaQuest ran from April 2014 to July 2017. The analysis
 presented here is performed on data collected until August 2015, about half
 of the entire data set. After applying various analysis cuts to select
-candidate dimuon events form the liquid hydrogen target, the dimuon invariant
+candidate dimuon events from the liquid hydrogen target, the dimuon invariant
 mass distribution is shown in Fig.~\ref{fig:mass}. The mass distribution is
-fitted by taking into account several contributions. First, the mass spectrum
+fitted with several different components. First, the mass spectrum
 from the data collected with the empty target flask, properly normalized by
-the integrated beam intensity. Second the expected mass distributions for
-$J/\psi$ and $\psi^\prime$ are  obtained by studying the GEANT4 based Monte-Carlo
+the integrated beam intensity, is included. Second the expected mass distributions for
+$J/\psi$ and $\psi^\prime$, based on the analysis of the GEANT4 based Monte-Carlo
 simulation, which takes into account the spectrometer acceptance. The Drell-Yan
-line shape is also generated using a similar procedure with the thrown distribution
-generated using a next-to-leading order calculation and CT14 parton distributions.
-The random background is then simulated by using the data collected with a
-``single-muon '' trigger. The two ``single-muon'' events are combined to
-create a simulated ``dimuon'' events, which is then sent through the same
-analysis chain. The data is then fitted to a sum of these different
-components to obtained the relative normalization for each components. The
+Monte-Carto, generated using a next-to-leading order calculation and CT14 parton
+distributions, are also analyzed. The random background is then simulated by
+using the data collected with a ``single-muon'' trigger. Two ``single-muon''
+events are combined to create a simulated ``dimuon'' events, which is then sent
+through the same analysis chain. The data is then fitted to a sum of these
+different components to obtained the normalization for each components. The
 data are well described by this fitting procedure. And the mass distribution
 in each kinematic bin is also well described by this fitting procedure.
 
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[width=0.65\linewidth]{extFig3_LH2}
-	\caption{The reconstructed invariant mass distribution for data collected on
+	\caption{The reconstructed dimuon invariant mass distribution for data collected on
 		liquid hydrogen target after all analysis cuts \cite{dove2021}.
-		In the lower mass region, the predominant signal is produced by the decay
+		In the lower mass region, the predominant signal is from the decay
 		of $J/\psi$ and $\psi^\prime$. }
 	\label{fig:mass}
 \end{figure}
@@ -196,7 +192,7 @@ in each kinematic bin is also well described by this fitting procedure.
 After the number of $J/\psi$ events is extracted from the mass distributions,
 the quarkonium production cross section is obtained from the yeilds as follows
 \begin{equation}
-	B\dv{\sigma}{c_F} = \frac{N_{\textrm{events}}}{\Delta x_F \mathcal{L} \epsilon},
+	B\dv{\sigma}{x_F} = \frac{N_{\textrm{events}}}{\Delta x_F \mathcal{L} \epsilon},
 \end{equation}
 where $B$ is the branching ratio for $J/\psi$ to decay into a muon pair,
 $\epslon$ is the spectrometer acceptance and efficiency correction, and
@@ -206,21 +202,19 @@ efficiency correction are obtained by studying the Monte-Carlo simulation.
 To compare the measured $J/\psi$ production cross section with theoretical
 expectations, we have performed calculation using the Next-to-Leading
 order (NLO) Color Evaporation Model (CEM)\cite{mangano1993} and
-Non-Relativistic QCD (NRQCD) \cite{bodwin1997}. In both model, the heavy
-quark-antiquark ($\bar{Q}Q$) pair production via various QCD hard process
+Non-Relativistic QCD (NRQCD) model \cite{bodwin1997}. In both models, the heavy
+quark-antiquark ($\bar{Q}Q$) pair production via various QCD hard processes
 is calculated using purturbative QCD. The main difference between the two
-models is in the hadronization into specific quarkonium bound state.
-In the CEM framework, $\bar{c}c$ pair with an invariant mass $M_{\bar{c}c}$
-smaller than the $D\bar{D}$ open-charm threshold, a constant probability $F$,
-specific for each charmonium state, accounts for the hadronization into
-colorless charmonium state. In contrast, in NRQCD, the hadronization is
-described by a set of long-distance matrix elements which depend on the spin,
-color and angular momentum of the $\bar{Q}Q$ pairs.
+models is in the hadronization into specific quarkonium state.
+In the CEM framework, a constant probability $F$, specific for each charmonium
+state, accounts for the hadronization into colorless charmonium state. In contrast,
+in NRQCD, the hadronization is described by a set of long-distance matrix elements
+(LDMEs) which depend on the spin, color and angular momentum of the $\bar{Q}Q$ pairs.
 
 The model predictions from both model for the $J/\psi$ production with a \SI{120}{\GeV}
 proton beam are shown in Fig.~\ref{fig:jpsi_theory}. At forward $x_F$, both models suggest
-that quark-antiquark annihilation being more important than gluon-gluon fusion, but NRQCD
-put greater importance on quark-antiquark annihilation.
+that quark-antiquark annihilation is more important than gluon-gluon fusion, but NRQCD
+give somewhat greater importance for the quark-antiquark annihilation.
 \begin{figure}[htbp!]
 	\centering
 	\begin{subfigure}{0.45\linewidth}
@@ -229,21 +223,21 @@ put greater importance on quark-antiquark annihilation.
 	\begin{subfigure}{0.45\linewidth}
 		\includegraphics[width=0.9\linewidth]{jpsi_cs_pp}
 	\end{subfigure}
-	\caption{The model prediction for $J/\psi$ production with a \SI{120}{\GeV}
+	\caption{The model prediction for $J/\psi$ production in $p+p$ with a \SI{120}{\GeV}
 		proton beam using CEM (left) and NRQCD {right}. Contribution from the
 		quark-antiquark annihilation and gluon-gluon fusion are shown as blue dotted line
 		and red dashed line.}
 	\label{fig:jpsi_theory}
 \end{figure}
 
-The preliminary result from SeaQuest is shown in Fig.\ref{fig:abs_cs_NRQCD},
-and are compared with both the CEM and NRQCD calculation. The main sources
-of systematic uncertainties comes from the modeling of the random background
-and the beam luminosity normalization. The normalization of the CEM calculation is
-adjusted to fit the data, and account for the hadronization probability. The line
+The preliminary result of $\frac{d\sigma}{\dx_F}$ from SeaQuest are shown in
+Fig.\ref{fig:abs_cs_NRQCD}, and compared with both the CEM and NRQCD calculation.
+The main sources of systematic uncertainties comes from the modeling of the random background
+and the beam luminosity normalization. The normalization of the CEM calculation,
+which accounts for the hadronization probability is adjusted to fit the data. The line
 shape of the extracted cross section is in good agreement with CEM. For the NRQCD
 calculation, the LDMEs are taken from \cite{hsieh2021}, which are extracted from
-a global analysis of pion and proton induced charmonium production in fixed target
+a global analysis of pion and proton induced charmonium production in fixed-target
 experiments. The overall normalization and the line shape of the extracted cross
 section are also in good agreement with the NRQCD calculation.
 \todo{describe the cross section calculation and systematic}
@@ -268,7 +262,7 @@ section are also in good agreement with the NRQCD calculation.
 \end{figure}
 
 
-The $(p+d)/2(p+p)$ cross section ratio can also be obtained. As the most of the
+The $\sigma^{pd}/2\sigma^{pp}$ cross section ratios can also be obtained. As most of the
 systematic uncertainties are correlated between the hydrogen and deuterium targets,
 they would cancel out in the ratios.
 \begin{figure}[htbp!]
@@ -279,45 +273,46 @@ they would cancel out in the ratios.
 	\begin{subfigure}{0.45\linewidth}
 		\includegraphics[width=0.9\linewidth]{jPsi_csr_x2_nature_NRQCD_CEM}
 	\end{subfigure}
-	\caption{The preliminary result on the extracted $J/\psi$ $(p+d)/2(p+p)$
+	\caption{The preliminary result on the extracted $J/\psi$ $\sigma^{pd}/2\sigma^{pp}$
 		cross section ratio as a function of $x_F$ (left) and $x_t$ (right).
 		The extracted ratio is also compared with previous measurements by NA51
-		\cite{abreu1998} and E866 \cite{peng2003} (left), as well as the Drell-Yan
-		cross section ration reported by SeaQuest\cite{dove2021} (right).}
+		and E866 (left), as well as the Drell-Yan cross section ratio reported
+		by SeaQuest\cite{dove2021} (right).}
 	\label{fig:csr}
 \end{figure}
-The preliminary $J/\psi$ $(p+d)/2(p+p)$ cross section ratio is shown in
+The preliminary $J/\psi$ $\sigma^{pd}/2\sigma^{pp}$ ratios are shown in
 Fig.~\ref{fig:csr}. The SeaQuest measurement is at a lower energy and higher $x_F$
 compared to previous measurements. The preliminary result is consistent with unity
 within uncertainty, in qualitative agreement with earlier measurement at \SI{450}{\GeV}
-by the NA51 Collaboration and \SI{800}{\GeV} by the E866 Collaboration.
+by the NA51 Collaboration \cite{abreu1998} and \SI{800}{\GeV} by the E866 Collaboration
+\cite{peng2003}.
 
 While the Drell-Yan process proceeds via electromagnetic interaction sensitive
 to the quarks and antiquarks distribution, the charmonium production is a strong
 interaction sensitive to the gluon contents of the colliding nucleons. These
 different characteristics between the two processes are reflected in the
-$(p+d)/2(p+p)$ ratios. While Drell-Yan ratios is significantly different from unity
-as a result of the flavor asymmetry of the light-quark sea, the $J/\psi$ production
-cross section ratio is consistent with unity.
+$\sigma^{pd}/2\sigma^{pp}$ ratios. While Drell-Yan ratios is significantly different
+from unity as a result of the $\bar{d}/\bar{u}$ flavor asymmetry of the light-quark sea,
+the $J/\psi$ production cross section ratio is close to unity.
 
 The CEM and NRQCD calculation are shown as green dotted line and orange solid line
-respectively. The difference between the two calculations are reflecting the higher
+respectively. The difference between the two calculations reflects the greater
 importance of the quark-antiquark annihilation in the NRQCD calculation.
 
 \section{Conclusions}
 The simultaneous measurement of the charmonium production and the Drell-Yan dimuons
-in the SeaQuest experiment allows for a comparison of the two distinct process. The
+in the SeaQuest experiment allows for a comparison of the two distinct processes. The
 extracted $J/\psi$ production cross section is in good agreement with both the CEM
-and NRQCD calculation. The $(p+d)/2(p+p)$ $J/\psi$ production cross section ratio
-is consistent with unity, and the difference between the $J/\psi$ and Drell-Yan
+and NRQCD calculation. The $\sigma^{pd}/2\sigma^{pp}$ $J/\psi$ production cross section ratio
+is close to unity, and the difference between the $J/\psi$ and Drell-Yan
 ratio is reflecting the different mechanism between the two process.
 
 Predictions from the NRQCD calculation suggest the quark-antiquark annihilation would
 be more important in the $\psi^\prime$ production, and hence one would expect $\psi^\prime$
-to have a boarder $x_F$ distribution to $J/\psi$. The extraction of the $\psi^\prime$
-cross section is currently underway and would be able to provide input to charmonium
-production. Furthermore, the data from the remaining data sets would roughly double
-the statistics for both the charmonium production as well as the Drell-Yan.
+to have a broader $x_F$ distribution to $J/\psi$. The extraction of the $\psi^\prime$
+cross section is currently underway and would be able to provide further input to
+the understanding of charmonium production. Furthermore, the data from the remaining
+data sets would roughly double the statistics for both the charmonium production as well as the Drell-Yan.
 
 \printbibliography[heading=bibintoc,title={References}]
 \listoftodos
