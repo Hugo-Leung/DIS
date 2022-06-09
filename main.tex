@@ -5,7 +5,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage[left=3cm,right=3cm,top=3cm,bottom=3cm]{geometry}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
 %\usepackage[a4paper,top=3.5cm,bottom=3.5cm,left=3.5cm,right=3.5cm]{geometry}
 \usepackage{color}
 \usepackage{lineno}
@@ -86,8 +86,8 @@ annihilation process is also expected. The relative importance of these two
 processes is expected to depends on the energy of the colliding hadron as well
 as the Feynman-$x$ ($x_F$) of the charmonium \cite{peng1995}. The quark-antiquark
 annihilation process is sensitive to the light sea-quark asymmetry in the proton,
-as in the case of Drell-Yan process, while the gluon-gluon fusion process is expected 
-to be identical for the reaction on hydrogen and deutrium targets. 
+as in the case of Drell-Yan process, while the gluon-gluon fusion process is expected
+to be identical for the reaction on hydrogen and deutrium targets.
 
 The NA51 Collaboration reported the simultaneous measurement of the charmonium
 production and Drell-Yan for $p+p$ and $p+d$ at \SI{450}{\GeV} at a single value
@@ -125,11 +125,11 @@ presented here is performed on data collected until August 2015, about half
 of the entire data set. After applying various analysis cuts to select
 candidate dimuon events from the liquid hydrogen target, the dimuon invariant
 mass distribution is shown in Fig.~\ref{fig:mass}. The $J/\psi$ peak and $\psi^\prime$
-shoulder are clear visible and are the predominant source of signal at the 
+shoulder are clear visible and are the predominant source of signal at the
 lower mass region. The mass distribution is fitted with several different
-components. First, the mass spectrum from the data collected with the 
+components. First, the mass spectrum from the data collected with the
 empty target flask, properly normalized by the integrated beam intensity,
-is included. Second the expected mass distributions for $J/\psi$ and 
+is included. Second, the expected mass distributions for $J/\psi$ and
 $\psi^\prime$, based on the analysis of the GEANT4 based Monte-Carlo
 simulation, which takes into account the spectrometer acceptance. The Drell-Yan
 Monte-Carto, generated using a next-to-leading order calculation and CT14 parton
@@ -141,7 +141,7 @@ different components to obtained the normalization for each components. The
 data are well described by this fitting procedure. This fitting procedure
 can also described the mass distribution in each kinematic bin.
 
-\begin{figure}[htbp!]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.65\linewidth]{extFig3_LH2}
 	\caption{The reconstructed dimuon invariant mass distribution for data collected on
@@ -162,9 +162,9 @@ $\mathcal{L}$ is the effective luminosity. The spectrometer acceptance and
 efficiency correction are obtained by studying the Monte-Carlo simulation.
 We define the following kinematic variables for the $J/\psi$:
 \begin{align}
-x_F &= \frac{2P^L_{CM}}{\sqrt{s}},\\
-x_b &= \frac{\textbf{P}_{\textrm{target}}\cdot\textbf{P}_{\textrm{sum}}}{\textbf{P}_{\textrm{target}} \cdot\left(\textbf{P}_{\textrm{beam}}+\textbf{P}_{\textrm{target}}\right)},\\
-x_t &= \frac{\textbf{P}_{\textrm{beam}}\cdot\textbf{P}_{\textrm{sum}}}{\textbf{P}_{\textrm{beam}} \cdot\left(\textbf{P}_{\textrm{beam}}+\textbf{P}_{\textrm{target}}\right)},
+	x_F & = \frac{2P^L_{CM}}{\sqrt{s}},                                                                                                                                                \\
+	x_b & = \frac{\textbf{P}_{\textrm{target}}\cdot\textbf{P}_{\textrm{sum}}}{\textbf{P}_{\textrm{target}} \cdot\left(\textbf{P}_{\textrm{beam}}+\textbf{P}_{\textrm{target}}\right)}, \\
+	x_t & = \frac{\textbf{P}_{\textrm{beam}}\cdot\textbf{P}_{\textrm{sum}}}{\textbf{P}_{\textrm{beam}} \cdot\left(\textbf{P}_{\textrm{beam}}+\textbf{P}_{\textrm{target}}\right)},
 \end{align}
 where $P^L_{CM}$ is the dimuon longiudinal momentum in the nucleon-nucleon
 center-of-mass (CM) frame, $s$ is the CM energy squared. $x_b$ and $x_t$ are
@@ -176,7 +176,8 @@ and the dimuon $\textbf{P}_{\textrm{sum}}$.
 To compare the measured $J/\psi$ production cross section with theoretical
 expectations, we have performed calculation using the Next-to-Leading
 order (NLO) Color Evaporation Model (CEM)\cite{mangano1993} and
-Non-Relativistic QCD (NRQCD) model \cite{bodwin1997}. In both models, the heavy
+Non-Relativistic QCD (NRQCD) model \cite{bodwin1997}, with CT14NLO \cite{dulat2016}
+as the input PDF. In both models, the heavy
 quark-antiquark ($\bar{Q}Q$) pair production via various QCD hard processes
 is calculated using purturbative QCD. The main difference between the two
 models is in the hadronization into specific quarkonium state.
@@ -185,11 +186,11 @@ state, accounts for the hadronization into colorless charmonium state. In contra
 in NRQCD, the hadronization is described by a set of long-distance matrix elements
 (LDMEs) which depend on the spin, color and angular momentum of the $\bar{Q}Q$ pairs.
 
-The model predictions from both model for the $J/\psi$ production with a \SI{120}{\GeV}
+The model predictions from both models for the $J/\psi$ production with a \SI{120}{\GeV}
 proton beam are shown in Fig.~\ref{fig:jpsi_theory}. At forward $x_F$, both models suggest
 that quark-antiquark annihilation is more important than gluon-gluon fusion, but NRQCD
 give somewhat greater importance for the quark-antiquark annihilation.
-\begin{figure}[htbp!]
+\begin{figure}[h!]
 	\centering
 	\begin{subfigure}{0.45\linewidth}
 		\includegraphics[width=0.9\linewidth]{pp_norm_cs_NLO_pp}
@@ -214,7 +215,7 @@ calculation, the LDMEs are taken from \cite{hsieh2021}, which are extracted from
 a global analysis of pion and proton induced charmonium production in fixed-target
 experiments. The overall normalization and the line shape of the extracted cross
 section are also in good agreement with the NRQCD calculation.
-\begin{figure}[htbp!]
+\begin{figure}[h!]
 	\centering
 	\begin{subfigure}{0.45\linewidth}
 		\includegraphics[width=0.9\linewidth]{jpsi_xF_LH2}
@@ -234,11 +235,10 @@ section are also in good agreement with the NRQCD calculation.
 	\label{fig:abs_cs_NRQCD}
 \end{figure}
 
-
 The $\sigma^{pd}/2\sigma^{pp}$ cross section ratios can also be obtained. As most of the
 systematic uncertainties are correlated between the hydrogen and deuterium targets,
 they would cancel out in the ratios.
-\begin{figure}[htbp!]
+\begin{figure}[h!]
 	\centering
 	\begin{subfigure}{0.45\linewidth}
 		\includegraphics[width=0.9\linewidth]{jPsi_all_noTheory_v2}
@@ -250,7 +250,7 @@ they would cancel out in the ratios.
 		cross section ratio as a function of $x_F$ (left) and $x_t$ (right).
 		The extracted ratio is also compared with previous measurements by NA51
 		and E866 (left), as well as the Drell-Yan cross section ratio reported
-		by SeaQuest\cite{dove2021} (right).}
+		by SeaQuest (right).}
 	\label{fig:csr}
 \end{figure}
 The preliminary $J/\psi$ $\sigma^{pd}/2\sigma^{pp}$ ratios are shown in
@@ -264,9 +264,10 @@ While the Drell-Yan process proceeds via electromagnetic interaction sensitive
 to the quarks and antiquarks distribution, the charmonium production is a strong
 interaction sensitive to the gluon contents of the colliding nucleons. These
 different characteristics between the two processes are reflected in the
-$\sigma^{pd}/2\sigma^{pp}$ ratios. While Drell-Yan ratios is significantly different
-from unity as a result of the $\bar{d}/\bar{u}$ flavor asymmetry of the light-quark sea,
-the $J/\psi$ production cross section ratio is close to unity.
+$\sigma^{pd}/2\sigma^{pp}$ ratios. While the measured Drell-Yan ratio \cite{dove2021}
+is significantly different from unity as a result of the $\bar{d}/\bar{u}$
+flavor asymmetry of the light-quark sea, the $J/\psi$ production cross section ratio
+is close to unity.
 
 The CEM and NRQCD calculation are shown as green dotted line and orange solid line
 respectively. The difference between the two calculations reflects the greater
