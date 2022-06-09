@@ -1,41 +1,12 @@
-\documentclass[10pt, a4paper,final]{article}
-\usepackage{graphicx}
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%   document style macros
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\def\Title#1{\begin{center} {\Large #1 } \end{center}}
-\def\Author#1{\begin{center}{ \sc #1} \end{center}}
-\def\Address#1{\begin{center}{ \it #1} \end{center}}
-\def\andauth{\begin{center}{and} \end{center}}
-\def\submit#1{\begin{center}Submitted to {\sl #1} \end{center}}
-\newcommand\pubblock{\rightline{\begin{tabular}{l} Proceedings of DIS2022\\ 
-         \pubdate  \end{tabular}}}
-
-\newenvironment{Abstract}{\begin{quotation} \begin{center} 
-             \large ABSTRACT \end{center}\bigskip 
-      \begin{large}}{\end{large}\end{quotation}}
-
-\newenvironment{Presented}{\begin{quotation} \begin{center} 
-             PRESENTED AT\end{center}\bigskip 
-      \begin{center}\begin{large}}{\end{large}\end{center} \end{quotation}}
-
-\def\Acknowledgements{\bigskip  \bigskip \begin{center} \begin{large}
-      \bf ACKNOWLEDGEMENTS \end{large}\end{center}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%  personal abbreviations and macros
-%    the following package contains macros used in this document:
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\textwidth=6.5in
-\textheight=8.75in
-\hoffset=-0.85in
-\voffset=-0.6in
-
-
-% include packages you will need
+\documentclass[10pt,a4paper,final]{article}
 \usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=3cm,right=3cm,top=3cm,bottom=3cm]{geometry}
+%\usepackage[a4paper,top=3.5cm,bottom=3.5cm,left=3.5cm,right=3.5cm]{geometry}
 \usepackage{color}
 \usepackage{lineno}
 \usepackage{hyperref}
@@ -43,75 +14,55 @@
 	biblabel=brackets,%
 	chaptertitle=false,pageranges=false,%
 	maxnames=4,sorting=none]{biblatex}
-\usepackage{amsmath,amsthm,amssymb}
-\usepackage{graphicx}
 \usepackage{physics}
 \usepackage{subcaption}
 \usepackage{tikz}
 \usepackage{siunitx}
 \usepackage{url}
-\usepackage[obeyFinal]{todonotes}
+\usepackage{makeidx}
+\makeindex
 
 \graphicspath{{images/}}
 \addbibresource{references.bib}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% basic data for the eprint:
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\newcommand\pubdate{\today}
-
-%%  Affiliation
-\def\affiliation{
-Department of Physics, University of Illinois Urbana-Champaign, \\Urbana, Illinois 61801, USA\\
-Representing the SeaQuest Collaboration}
-
-%% Acknowledge the support
-\def\support{\footnote{Work supported by NSF-2111046}}
-
-
-\newcommand{\conference}{DIS2022: XXIX International Workshop on Deep-Inelastic Scattering and Related Subjects\\
-Santiago de Compostela, Spain\\
-May 2-6 2022}
-
 \begin{document}
-\large
-\begin{titlepage}
-	\pubblock
+
+\begin{center}
+	{\LARGE \bf Measurement of Charmonium Production in $p + p$ and $p + d$ Interaction in the Fermilab SeaQuest Experiment}
+
+	\par\vspace*{2.5mm}\par
+
+	{
+
+		\bigskip
+
+		\large \bf Ching Him Leung\footnote{E-Mail: \href{mailto:chleung@illinois.edu}{chleung@illinois.edu}\\Work supported by NSF-2111046} (on behalf of the SeaQuest Collboration)}
+
+	\vspace*{2.5mm}
+
+	{Department of Physics, University of Illinois Urbana-Champaign, \\Urbana, Illinois 61801, USA}
+
+	\vspace*{2.5mm}
+
+	{\it Presented at DIS2022: XXIX International Workshop on Deep-Inelastic Scattering and Related Subjects, Santiago de Compostela, Spain, May 2-6 2022}
 
 
-	\vfill
-	\Title{Measurement of Charmonium Production in $p + p$ and $p + d$ Interaction in the Fermilab SeaQuest Experiment}
-	\vfill
+	\vspace*{2.5mm}
 
-	\Author{Ching Him Leung \support}
-	\Address{\affiliation}
-	\vfill
 
-	\begin{Abstract}
-		The Fermilab SeaQuest experiment has measured dimuon events from the interaction
-		of \SI{120}{\GeV} proton beam on liquid hydrogen and deuterium targets with dimuon
-		mass between \num{2} and \SI{9}{\GeV}. These dimuon events contain both the Drell-Yan
-		process and the charmonium ($J/\psi$ and $\psi^\prime$) production. Unlike the Drell-Yan process
-		which probes the antiquark distributions in the nucleons, the charmonium production
-		is sensitive to both quark and gluon distributions. SeaQuest has extracted the
-		$\sigma^{pd}/2\sigma^{pp}$ ratios as well as the differential cross sections for
-		charmonium production in the kinematic region of $0.4 < x_F < 0.9$. The $\sigma^{pd}/2\sigma^{pp}$
-		ratios for charmonium production are found to be significantly different
-		from that of the Drell-Yan process. The measured differential cross sections for
-		charmonium production are compared with theoretical calculations.
-	\end{Abstract}
-
-	\vfill
-
-	\begin{Presented}
-		\conference
-	\end{Presented}
-	\vfill
-\end{titlepage}
-
-\setcounter{footnote}{0}
-\normalsize
+\end{center}
+\begin{abstract}
+	The Fermilab SeaQuest experiment has measured dimuon events from the interaction
+	of \SI{120}{\GeV} proton beam on liquid hydrogen and deuterium targets with dimuon
+	mass between \num{2} and \SI{9}{\GeV}. These dimuon events contain both the Drell-Yan
+	process and the charmonium ($J/\psi$ and $\psi^\prime$) production. Unlike the Drell-Yan process
+	which probes the antiquark distributions in the nucleons, the charmonium production
+	is sensitive to both quark and gluon distributions. SeaQuest has extracted the
+	$\sigma^{pd}/2\sigma^{pp}$ ratios as well as the differential cross sections for
+	charmonium production in the kinematic region of $0.4 < x_F < 0.9$. The $\sigma^{pd}/2\sigma^{pp}$
+	ratios for charmonium production are found to be significantly different
+	from that of the Drell-Yan process. The measured differential cross sections for
+	charmonium production are compared with theoretical calculations.
+\end{abstract}
 
 
 \section{Introduction}
@@ -124,7 +75,6 @@ on the $\sigma^{pd}/2\sigma^{pp}$ Drell-Yan cross section ratios, which are sens
 the flavor asymmetry of $\bar{d}/\bar{u}$ in the proton, were reported recently
 \cite{dove2021}.
 
-\todo[inline]{$J/\psi$ production}
 Unlike the Drell-Yan process which primarily involves the annihilation of quark
 and antiquark via electromagnetic interaction, charmonium production proceeds
 via strong interaction containing contributions from both the quark-antiquark
@@ -134,7 +84,17 @@ While proton-induced charmonium production is expected to be dominated by gluon-
 fusion process \cite{vogt1999}, some contributions form the quark-antiquark
 annihilation process is also expected. The relative importance of these two
 processes is expected to depends on the energy of the colliding hadron as well
-as the Feynman-$x$ ($x_F$) of the charmonium \cite{peng1995}.
+as the Feynman-$x$ ($x_F$) of the charmonium \cite{peng1995}. The quark-antiquark
+annihilation process is sensitive to the light sea-quark asymmetry in the proton,
+as in the case of Drell-Yan process, while the gluon-gluon fusion process is expected 
+to be identical for the reaction on hydrogen and deutrium targets. 
+
+The NA51 Collaboration reported the simultaneous measurement of the charmonium
+production and Drell-Yan for $p+p$ and $p+d$ at \SI{450}{\GeV} at a single value
+of rapidity \cite{abreu1998}. The measurement by SeaQuest covers the kinematic
+range of $0.3<x_F<0.8$. The \SI{120}{\GeV} beam energy in the SeaQuest experiment
+is expected to probe the parton distribution at a larger values of $x$ than the
+NA51 experiment at \SI{450}{\GeV}.
 
 
 \section{E906/SeaQuest Experiment}
@@ -164,11 +124,13 @@ Data collection for SeaQuest ran from April 2014 to July 2017. The analysis
 presented here is performed on data collected until August 2015, about half
 of the entire data set. After applying various analysis cuts to select
 candidate dimuon events from the liquid hydrogen target, the dimuon invariant
-mass distribution is shown in Fig.~\ref{fig:mass}. The mass distribution is
-fitted with several different components. First, the mass spectrum
-from the data collected with the empty target flask, properly normalized by
-the integrated beam intensity, is included. Second the expected mass distributions for
-$J/\psi$ and $\psi^\prime$, based on the analysis of the GEANT4 based Monte-Carlo
+mass distribution is shown in Fig.~\ref{fig:mass}. The $J/\psi$ peak and $\psi^\prime$
+shoulder are clear visible and are the predominant source of signal at the 
+lower mass region. The mass distribution is fitted with several different
+components. First, the mass spectrum from the data collected with the 
+empty target flask, properly normalized by the integrated beam intensity,
+is included. Second the expected mass distributions for $J/\psi$ and 
+$\psi^\prime$, based on the analysis of the GEANT4 based Monte-Carlo
 simulation, which takes into account the spectrometer acceptance. The Drell-Yan
 Monte-Carto, generated using a next-to-leading order calculation and CT14 parton
 distributions, are also analyzed. The random background is then simulated by
@@ -176,8 +138,8 @@ using the data collected with a ``single-muon'' trigger. Two ``single-muon''
 events are combined to create a simulated ``dimuon'' events, which is then sent
 through the same analysis chain. The data is then fitted to a sum of these
 different components to obtained the normalization for each components. The
-data are well described by this fitting procedure. And the mass distribution
-in each kinematic bin is also well described by this fitting procedure.
+data are well described by this fitting procedure. This fitting procedure
+can also described the mass distribution in each kinematic bin.
 
 \begin{figure}[htbp!]
 	\centering
@@ -190,14 +152,26 @@ in each kinematic bin is also well described by this fitting procedure.
 \end{figure}
 
 After the number of $J/\psi$ events is extracted from the mass distributions,
-the quarkonium production cross section is obtained from the yeilds as follows
+the quarkonium production cross section is obtained from the yields as follows
 \begin{equation}
 	B\dv{\sigma}{x_F} = \frac{N_{\textrm{events}}}{\Delta x_F \mathcal{L} \epsilon},
 \end{equation}
 where $B$ is the branching ratio for $J/\psi$ to decay into a muon pair,
-$\epslon$ is the spectrometer acceptance and efficiency correction, and
+$\epsilon$ is the spectrometer acceptance and efficiency correction, and
 $\mathcal{L}$ is the effective luminosity. The spectrometer acceptance and
 efficiency correction are obtained by studying the Monte-Carlo simulation.
+We define the following kinematic variables for the $J/\psi$:
+\begin{align}
+x_F &= \frac{2P^L_{CM}}{\sqrt{s}},\\
+x_b &= \frac{\textbf{P}_{\textrm{target}}\cdot\textbf{P}_{\textrm{sum}}}{\textbf{P}_{\textrm{target}} \cdot\left(\textbf{P}_{\textrm{beam}}+\textbf{P}_{\textrm{target}}\right)},\\
+x_t &= \frac{\textbf{P}_{\textrm{beam}}\cdot\textbf{P}_{\textrm{sum}}}{\textbf{P}_{\textrm{beam}} \cdot\left(\textbf{P}_{\textrm{beam}}+\textbf{P}_{\textrm{target}}\right)},
+\end{align}
+where $P^L_{CM}$ is the dimuon longiudinal momentum in the nucleon-nucleon
+center-of-mass (CM) frame, $s$ is the CM energy squared. $x_b$ and $x_t$ are
+the fraction of the hadron momentum carried by the parton in the beam and
+target nucleon, receptively. They are defined using the four momentum of
+the beam hadron ($\textbf{P}_{\textrm{beam}}$), target hadron ($\textbf{P}_{\textrm{target}}$)
+and the dimuon $\textbf{P}_{\textrm{sum}}$.
 
 To compare the measured $J/\psi$ production cross section with theoretical
 expectations, we have performed calculation using the Next-to-Leading
@@ -230,17 +204,16 @@ give somewhat greater importance for the quark-antiquark annihilation.
 	\label{fig:jpsi_theory}
 \end{figure}
 
-The preliminary result of $\frac{d\sigma}{\dx_F}$ from SeaQuest are shown in
-Fig.\ref{fig:abs_cs_NRQCD}, and compared with both the CEM and NRQCD calculation.
+The preliminary result of $\frac{d\sigma}{dx_F}$ from SeaQuest are shown in
+Fig.~\ref{fig:abs_cs_NRQCD}, and compared with both the CEM and NRQCD calculation.
 The main sources of systematic uncertainties comes from the modeling of the random background
 and the beam luminosity normalization. The normalization of the CEM calculation,
-which accounts for the hadronization probability is adjusted to fit the data. The line
+which accounts for the hadronization probability, is adjusted to fit the data. The line
 shape of the extracted cross section is in good agreement with CEM. For the NRQCD
 calculation, the LDMEs are taken from \cite{hsieh2021}, which are extracted from
 a global analysis of pion and proton induced charmonium production in fixed-target
 experiments. The overall normalization and the line shape of the extracted cross
 section are also in good agreement with the NRQCD calculation.
-\todo{describe the cross section calculation and systematic}
 \begin{figure}[htbp!]
 	\centering
 	\begin{subfigure}{0.45\linewidth}
@@ -307,14 +280,18 @@ and NRQCD calculation. The $\sigma^{pd}/2\sigma^{pp}$ $J/\psi$ production cross 
 is close to unity, and the difference between the $J/\psi$ and Drell-Yan
 ratio is reflecting the different mechanism between the two process.
 
-Predictions from the NRQCD calculation suggest the quark-antiquark annihilation would
+From the E866 measurment of the $\Upsilon$ production \cite{brown2001}, it was observed the
+the polarization is different between $\Upsilon(1S)$ and the excited states. It is possible
+that the polarization of $J/\psi$ and the excited states would be differet. Furthermore,
+predictions from the NRQCD calculation also suggest the quark-antiquark annihilation would
 be more important in the $\psi^\prime$ production, and hence one would expect $\psi^\prime$
 to have a broader $x_F$ distribution to $J/\psi$. The extraction of the $\psi^\prime$
 cross section is currently underway and would be able to provide further input to
-the understanding of charmonium production. Furthermore, the data from the remaining
+the understanding of charmonium production. Moreover, the data from the remaining
 data sets would roughly double the statistics for both the charmonium production as well as the Drell-Yan.
+The SpinQuest experiment, the follow-up experiment of SeaQuest, will measure the dimuon
+production with proton on transversely polarized ammonia target, which can provide information
+on the transverse spin asymmetry of charmonium production.
 
 \printbibliography[heading=bibintoc,title={References}]
-\listoftodos
 \end{document}
-
