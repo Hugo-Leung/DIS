@@ -7,7 +7,7 @@ jobs:
   build_latex:
     runs-on: ubuntu-latest
     container: 
-      image: texlive/texlive:latest 
+      image: registry.gitlab.com/islandoftex/images/texlive:TL2022-2022-06-12-04-08
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v3
